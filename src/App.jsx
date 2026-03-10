@@ -1,23 +1,27 @@
 import Header from "./components/Header.jsx";
-import Banner from "./components/Banner.jsx";
-import Catalogo from "./components/Catalogo.jsx";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import CatalogoDeLivros from "./pages/CatalogoDeLivros.jsx";
+import DetalhesDoLivro from "./pages/DetalhesDoLivro.jsx";
+import Login from "./pages/Login.jsx";
+import PaginaDeCadastro from "./pages/PaginaDeCadastro.jsx";
+import PaginaNaoEncontrada from "./pages/PaginaNaoEncontrada.jsx";
+import Footer from "./components/Footer.jsx";
 export default function App() {
     return (
         <>
-            <Header />
-            <Banner />
-            <Catalogo />
-
             <BrowserRouter>
+                <Header />
                 <Routes>
-                    <Route path="/" elements={<Home />} />
-                    <Route path="/catalogo" elements={<CatalogoDeLivros />} />
-                    <Route path="/detalhes" elements={<DetalhesDoLivro />} />
-                    <Route path="/login" elements={<Login />} />
-                    <Route path="/cadastro" elements={<PaginaDeCadastro />} />
-                    <Route path="*" elements={<PaginaNaoEncontrada />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/catalogoo" element={<CatalogoDeLivros />} />
+                    <Route path="/detalhes" element={<DetalhesDoLivro />}  />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/cadastro" element={<PaginaDeCadastro />} />
+                    <Route path="*" element={<PaginaNaoEncontrada />} />
                 </Routes>
+                <Footer />
+
             </BrowserRouter>
         </>
     )

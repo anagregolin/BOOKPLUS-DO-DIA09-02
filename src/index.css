@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  text-decoration: none;
 }
 
 .logo {
@@ -199,4 +200,847 @@ button {
   display: flex;
   justify-content: end;
   padding-bottom: 20px ;
+}
+
+.footer {
+  padding: 40px 10%;
+  font-family: sans-serif;
+  color: #555;
+  background-color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Empurra os blocos para as pontas */
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+/* Esquerda */
+.footer-brand {
+  max-width: 300px;
+}
+
+.brand-logo {
+  color: #001f3f;
+  margin-bottom: 15px;
+}
+
+.brand-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.brand-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: none;
+  cursor: pointer;
+}
+
+/* Direita */
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+
+.link-group h4 {
+  font-size: 12px;
+  color: #001f3f;
+  margin-bottom: 15px;
+}
+
+.link-group p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #777;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.heart {
+  color: red;
+}
+
+.header {
+  width: 100%;
+  padding: 15px 5%;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espaçamento entre os blocos */
+  gap: 20px;
+}
+
+/* Logo */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #001f3f;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* Busca */
+.search-container {
+  flex: 1; /* Faz a barra de busca crescer para ocupar o espaço */
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #eee;
+}
+
+.search-icon {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #aaa;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #001f3f;
+}
+
+/* Botão Admin */
+.admin-btn {
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.admin-btn:hover {
+  opacity: 0.9;
+}
+
+.hero {
+  height: 500px; /* Altura do banner */
+  background-image: url('sua-imagem-aqui.jpg'); /* Coloque o caminho da imagem */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Camada escura para dar contraste ao texto */
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+/* "Tag" Curadoria Exclusiva */
+.badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 35px;
+}
+
+/* Botões */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #001f3f;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(5px); /* Efeito de vidro */
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Layout Geral do Catálogo */
+.catalog-section {
+  padding: 60px 10%;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.subtitle-line {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subtitle-line::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #001f3f;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #001f3f;
+  margin-top: 10px;
+}
+
+/* Grid de Livros */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* Card Individual */
+.book-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-category-top {
+  font-size: 9px;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #001f3f;
+  margin: 5px 0;
+}
+
+.card-author {
+  font-size: 14px;
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.card-image-container {
+  background-color: #fce1b6; /* Cor pêssego das imagens */
+  border-radius: 15px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card-image-container:hover {
+  transform: translateY(-5px);
+}
+
+.card-category-bottom {
+  font-size: 10px;
+  color: #aaa;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+/* Botão Ver Mais */
+.catalog-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btn-load-more {
+  background: none;
+  border: 1px solid #001f3f;
+  color: #001f3f;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-load-more a {
+  color: #001f3f;
+}
+
+.btn-load-more:hover {
+  background-color: #001f3f;
+}
+
+.btn-load-more:hover a{
+  color: white;
+}
+
+.btn-load-more a:hover{
+  color: white;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Lado Esquerdo - Formulário */
+.login-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  background-color: white;
+}
+
+.login-header {
+  margin-bottom: 40px;
+}
+
+.login-logo-text {
+  color: #001f3f;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.login-subtitle {
+  color: #777;
+  font-size: 14px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #001f3f;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #001f3f;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.forgot-password {
+  color: #001f3f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-login {
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 30px; /* Estilo pílula igual ao resto do site */
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.3s;
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+}
+
+.login-footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+.login-footer a {
+  color: #001f3f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Lado Direito - Ilustração (Oculto em mobile) */
+.login-illustration {
+  flex: 1.2;
+  background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 31, 63, 0.8)),
+  url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=1000');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.illustration-text h3 {
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .login-illustration {
+    display: none;
+  }
+}
+
+button a{
+  color: white;
+}
+
+.grid-livros {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.card {
+  flex: 1; /* Faz todos terem a mesma largura */
+  max-width: 220px;
+}
+
+.card-capa {
+  height: 300px;
+  border-radius: 15px; /* Cantos arredondados do fundo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+/* Estilo básico para simular os livros com sombra */
+.livro-verde, .livro-verde-claro, .livro-branco, .livro-marrom, .livro-azul {
+  width: 120px;
+  height: 170px;
+  box-shadow: 12px 12px 25px rgba(0,0,0,0.2);
+}
+
+.livro-verde { background: #2d4a44; }
+.livro-verde-claro { background: #3a6351; width: 100px; height: 150px; }
+.livro-branco { background: #fff; }
+.livro-marrom { background: #b8926a; }
+.livro-azul { background: #004d4d; border-radius: 5px 20px 20px 5px; }
+
+/* Textos */
+.card-txt span {
+  font-size: 10px;
+  color: #aaa;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card-txt h3 {
+  font-size: 18px;
+  color: #001f3f;
+  margin: 4px 0;
+}
+
+.card-txt p {
+  font-size: 14px;
+  color: #bbb;
+  font-style: italic;
+  margin: 0;
+}
+
+.register-page {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Painel com Imagem (Esquerda) */
+.register-visual {
+  flex: 1;
+  background: linear-gradient(rgba(0, 31, 63, 0.85), rgba(0, 31, 63, 0.85)),
+  url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1000');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+}
+
+.visual-content {
+  max-width: 400px;
+  text-align: center;
+}
+
+.visual-content h1 { font-size: 42px; margin-bottom: 20px; }
+
+/* Formulário (Direita) */
+.register-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.register-header { margin-bottom: 30px; }
+
+.logo-small {
+  font-weight: bold;
+  color: #001f3f;
+  letter-spacing: 1px;
+}
+
+.register-header h2 {
+  font-size: 28px;
+  color: #001f3f;
+  margin: 10px 0 5px 0;
+}
+
+.register-header p { color: #888; font-size: 14px; }
+
+/* Campos */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #001f3f;
+}
+
+.field input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.field-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botão Estilo Pílula */
+.btn-register {
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.login-link a {
+  color: #001f3f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .register-visual { display: none; }
+}
+
+.catalogo-wrapper {
+  padding: 60px 8%;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+/* Header */
+.catalogo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.label-novidades {
+  font-size: 11px;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label-novidades::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #001f3f;
+}
+
+.titulo-bloco h1 {
+  font-size: 36px;
+  color: #001f3f;
+  margin: 10px 0 0 0;
+}
+
+.filtros-bloco {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-filtro {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.select-custom select {
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 25px;
+  border: 1px solid #eee;
+  background: #fff;
+  color: #555;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Grid */
+.grid-livros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* Card Estilo Imagem enviada */
+.book-card {
+  cursor: pointer;
+}
+
+.capa-container {
+  height: 320px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.capa-container:hover {
+  transform: translateY(-10px);
+}
+
+.livro-img {
+  width: 65%; /* Tamanho centralizado da sua foto */
+  box-shadow: 20px 20px 40px rgba(0,0,0,0.25); /* Sombra realista */
+}
+
+.book-info .categoria {
+  font-size: 10px;
+  font-weight: bold;
+  color: #bbb;
+}
+
+.book-info h3 {
+  font-size: 18px;
+  color: #001f3f;
+  margin: 5px 0;
+}
+
+.book-info p {
+  font-size: 14px;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Footer */
+.catalogo-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn-carregar {
+  background: transparent;
+  border: 1px solid #001f3f;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #001f3f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-carregar:hover {
+  background: #001f3f;
+  color: #fff;
 }
